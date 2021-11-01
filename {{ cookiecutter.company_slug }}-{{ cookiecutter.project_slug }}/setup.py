@@ -3,7 +3,7 @@ from re import search
 from setuptools import setup, find_packages
 
 with open(
-    "src/{{ cookiecutter.company_slug }}/{{ cookiecutter.project_slug }}}}/__init__.py",
+    "src/{{ cookiecutter.company_slug }}/{{ cookiecutter.project_slug }}/__init__.py",
     "rt",
     encoding="utf8",
 ) as f:
