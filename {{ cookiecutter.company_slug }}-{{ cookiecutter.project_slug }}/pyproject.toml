@@ -1,0 +1,28 @@
+[tool.black]
+line-length = 79
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.eggs
+  | \.mypy_cache
+  | \.pytest_cache
+  | src/
+  | ext
+  | build
+  | dist
+  | venv
+)/
+'''
+
+[tool.isort]
+line_length = 79
+known_first_party = '{{cookiecutter.project_slug}},config'
+multi_line_output = 3
+default_section = 'THIRDPARTY'
+skip = 'venv/'
+skip_glob = '**/migrations/*.py'
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true

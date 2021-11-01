@@ -1,0 +1,11 @@
+{
+  "project_name": "My Awesome Project",
+  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|trim() }}",
+  "company_name": "my company",
+  "company_slug": "{{ cookiecutter.company_name.lower()|replace(' ', '_')|replace('-', '_')|trim() }}",
+  "description": "Behold My Awesome Project!",
+  "author_name": "Team",
+  "email": "{{ cookiecutter.author_name.lower()|replace(' ', '-') }}@{{ cookiecutter.company_slug }}.com",
+  "repo_url": "https://bitbucket.org/{{ cookiecutter.company_slug }}/{{ cookiecutter.company_slug }}-{{ cookiecutter.project_slug }}",
+  "version": "0.1.0"
+}
